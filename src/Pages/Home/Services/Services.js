@@ -1,50 +1,59 @@
-import React from 'react';
-import img5 from '../../../assets/img5.png';
-import img6 from '../../../assets/img6.png';
-import img7 from '../../../assets/img7.png';
-import img8 from '../../../assets/img8.png';
-import img10 from '../../../assets/img10.png';
-import img11 from '../../../assets/img11.png';
+import React, { useState } from 'react';
+import img1 from '../../../assets/service-img/img1.png';
+import img2 from '../../../assets/service-img/img2.png';
+import img3 from '../../../assets/service-img/img3.png';
+import img4 from '../../../assets/service-img/img4.png';
+import img5 from '../../../assets/service-img/img5.png';
+import img6 from '../../../assets/service-img/img6.png';
 import Service from './Service';
 import Package from '../Packages/Package';
+import BookingService from './BookingService';
 
 
 const Services = () => {
 
+    const [serviceOption, setServiceOption] = useState(null);
+
     const servicesData = [
         {
             id: 1,
-            img: img5,
+            price: "$450",
+            img: img1,
             name: 'Elopements',
             description: 'If you are planning to elope or have an intimate wedding then I am already your biggest fan, because smart couples know that the small wedding trend is here to stay. We are proud of you for choosing a wedding style that focuses more on celebrating your love, and less on distracting details.'
         },
         {
             id: 2,
-            img: img6,
+            price: "$650",
+            img: img2,
             name: 'Simple and Sweet',
             description: 'Wedding planning and location consultation with Rachel ● Instruction on obtaining your marriage license - we will file it for you (Please provide a stamped envelope addressed to your county recorder).● All edited images are delivered by an online gallery.'
         },
         {
             id: 3,
-            img: img7,
+            price: "$350",
+            img: img3,
             name: 'Intimate Weddings',
             description: 'Wedding planning and location consultation with Rachel ● Instruction on obtaining your marriage license - we will file it for you ● All edited images are delivered by an online gallery '
         },
         {
             id: 4,
-            img: img8,
+            price: "$400",
+            img: img4,
             name: 'All Inclusive - Starting',
             description: 'Wedding planning and location consultation with Rachel ● Instruction on obtaining your marriage license - we will file it for you ● All edited images are delivered by an online gallery '
         },
         {
             id: 5,
-            img: img10,
+            price: "$500",
+            img: img5,
             name: 'Boho Picnic',
             description: 'Wedding planning and location consultation with Rachel ● Instruction on obtaining your marriage license - we will file it for you ● All edited images are delivered by an online gallery '
         },
         {
             id: 6,
-            img: img11,
+            price: "$350",
+            img: img6,
             name: 'Anything For Love',
             description: 'Wedding planning and location consultation with Rachel ● Instruction on obtaining your marriage license - we will file it for you ● All edited images are delivered by an online gallery '
         },
@@ -61,9 +70,16 @@ const Services = () => {
                     servicesData.map(service => <Service
                         key={service.id}
                         service={service}
+                        setServiceOption={setServiceOption}
                     ></Service>)
                 }
             </div>
+            {
+                serviceOption &&
+                <BookingService
+                    serviceOption={serviceOption}
+                ></BookingService>
+            }
             <Package></Package>
         </div>
     );

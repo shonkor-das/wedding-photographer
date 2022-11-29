@@ -1,0 +1,39 @@
+ [
+    {
+        "_id": 1,
+        "price": "$450",
+        "img": "file:///C:/Users/shonk/OneDrive/Desktop/Project/Server%20Mogodb/full-project/wedding-photographer/src/assets/service-img/img1.png",
+        "name": "Elopements",
+        "description": "If you are planning to elope or have an intimate wedding then I am already your biggest fan, because smart couples know that the small wedding trend is here to stay. We are proud of you for choosing a wedding style that focuses more on celebrating your love, and less on distracting details."
+    },
+    {
+        "_id": 2,
+        "img": "img6",
+        "name": "Simple and Sweet",
+        "description": "Wedding planning and location consultation with Rachel ● Instruction on obtaining your marriage license - we will file it for you (Please provide a stamped envelope addressed to your county recorder).● All edited images are delivered by an online gallery."
+    },
+    {
+        "_id": 3,
+        "img": "img7",
+        "name": "Intimate Weddings",
+        "description": "Wedding planning and location consultation with Rachel ● Instruction on obtaining your marriage license - we will file it for you ● All edited images are delivered by an online gallery "
+    },
+    {
+        "_id": 4,
+        "img": "img8",
+        "name": "All Inclusive - Starting",
+        "description": "Wedding planning and location consultation with Rachel ● Instruction on obtaining your marriage license - we will file it for you ● All edited images are delivered by an online gallery "
+    },
+    {
+        "_id": 5,
+        "img": "img10",
+        "name": "Boho Picnic",
+        "description": "Wedding planning and location consultation with Rachel ● Instruction on obtaining your marriage license - we will file it for you ● All edited images are delivered by an online gallery "
+    },
+    {
+        "_id": 6,
+        "img": "img11",
+        "name": "Anything For Love",
+        "description": "Wedding planning and location consultation with Rachel ● Instruction on obtaining your marriage license - we will file it for you ● All edited images are delivered by an online gallery "
+    }
+]
