@@ -104,8 +104,8 @@ const Gallerys = () => {
             </div>
             <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6'>
                 {
-                    galleryImage.map(gallery => <Gallery
-                        key={galleryImage.id}
+                    galleryImage.map((gallery, i) => <Gallery
+                        key={i}
                         gallery={gallery}
                     ></Gallery>)
                 }
