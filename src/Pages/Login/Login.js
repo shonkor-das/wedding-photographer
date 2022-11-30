@@ -26,6 +26,7 @@ const Login = () => {
                             className="input input-bordered w-full max-w-xs" />
                             {errors.email && <p className='text-error'>{errors.email?.message}</p>}
                     </div>
+
                     <div className="form-control w-full max-w-xs">
                         <label className="label">
                             <span className="label-text">Password</span>
@@ -42,11 +43,12 @@ const Login = () => {
                             <span className="label-text">Forget Password</span>
                         </label>
                     </div>
+
                     <input className='btn btn-neutral w-full' value="Login" type="submit" />
                 </form>
                 <p className='text-xs text-center mt-2'>New to Wedding Photograher? <Link to="/signup" className='text-success'>Create New Account</Link> </p>
                 <div className="divider">OR</div>
-                <button className='btn btn-outline uppercase w-full' type="">Continue with google</button>
+                <button className='btn btn-neutral uppercase w-full' type="">Continue with google</button>
             </div>
         </div>
     );
