@@ -14,7 +14,8 @@ const Navbar = () => {
     return (
         <div className="navbar py-5 lg:px-16" data-theme="fantasy">
             <div className="flex-1">
-                <img className='h-16 w-24' src={logo} alt=""/>
+                <img className='h-16 w-20 mr-3' src={logo} alt=""/>
+                <Link to='/login' className='text-2xl font-bold text-purple-600'>Wedding Photographer</Link>
             </div>
             <div className="flex-none">
                 <ul className="menu menu-horizontal p-0 font-semibold">

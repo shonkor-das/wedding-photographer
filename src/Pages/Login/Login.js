@@ -32,7 +32,8 @@ const Login = () => {
                         </label>
                         <input type="password"
                             {...register("password", {
-                                required: "Email Address is required"
+                                required: "Email Address is required",
+                                minLength: {value:6, message: 'Password must be 6 characters or longer'}
                             })}
                             className="input input-bordered w-full max-w-xs" />
                             {errors.password && <p className='text-error'>{errors.password?.message}</p>}
