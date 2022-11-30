@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BookingService = ({ serviceOption }) => {
+const BookingService = ({ serviceOption, setServiceOption }) => {
 
     const { name, price } = serviceOption;
 
@@ -15,6 +15,8 @@ const BookingService = ({ serviceOption }) => {
         const date = form.date.value;
 
         console.log(bookingName, price, location, name, phone, date);
+
+        setServiceOption(null);
     }
 
     return (
@@ -34,8 +36,8 @@ const BookingService = ({ serviceOption }) => {
                             <option>Rangamati</option>
                             <option>Cox's Bazar</option>
                         </select>
-                        <input name="name" type="text" placeholder="Please Your Name" className="input w-full" />
-                        <input name="phone" type="text" placeholder="Please Your Phone Number" className="input w-full" />
+                        <input name="name" type="text" placeholder="Please Your Name" className="input w-full" required />
+                        <input name="phone" type="text" placeholder="Please Your Phone Number" className="input w-full" required />
                         <input name="date" type="date" placeholder="Booking Date" className="input w-full" />
                         <input className='btn btn-accent w-full' type="submit" value="Submit" />
                     </form>

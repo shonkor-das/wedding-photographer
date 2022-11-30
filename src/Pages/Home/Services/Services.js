@@ -56,7 +56,7 @@ const Services = () => {
             img: img6,
             name: 'Anything For Love',
             description: 'Wedding planning and location consultation with Rachel ● Instruction on obtaining your marriage license - we will file it for you ● All edited images are delivered by an online gallery '
-        },
+        }
     ]
 
     return (
@@ -78,6 +78,7 @@ const Services = () => {
                 serviceOption &&
                 <BookingService
                     serviceOption={serviceOption}
+                    setServiceOption={setServiceOption}
                 ></BookingService>
             }
             <Package></Package>

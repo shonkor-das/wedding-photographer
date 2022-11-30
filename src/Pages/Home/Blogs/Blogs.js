@@ -77,6 +77,7 @@ const Blogs = () => {
             name: 'How To Secretly Propose To Your Girlfriend',
         },
     ]
+    
     return (
         <div className='mt-12'>
             <div className='text-center mb-12'>
