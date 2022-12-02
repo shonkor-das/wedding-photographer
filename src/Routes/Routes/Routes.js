@@ -7,8 +7,9 @@ import Services from "../../Pages/Home/Services/Services";
 import Gallerys from "../../Pages/Home/Gallerys/Gallerys";
 import Blogs from "../../Pages/Home/Blogs/Blogs";
 import SignUp from "../../Pages/SignUp/SignUp";
-import Dashboard from "../../Pages/Dashboard/Dashboard/Dashboard";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import Details from "../../Pages/Home/Services/Details";
+import Reviews from "../../Pages/Reviews/Reviews/Reviews";
 
 
 const router = createBrowserRouter([
@@ -25,16 +26,20 @@ const router = createBrowserRouter([
                 element: <Services></Services>
             },
             {
-                path: '/gallery',
-                element: <Gallerys></Gallerys>
+                path: '/blogs',
+                element: <Blogs></Blogs>
             },
             {
                 path: '/about',
                 element: <About></About>
             },
             {
-                path: '/blogs',
-                element: <Blogs></Blogs>
+                path: '/gallery',
+                element: <Gallerys></Gallerys>
+            },
+            {
+                path: '/details',
+                element: <Details></Details>
             },
             {
                 path: '/login',
@@ -47,8 +52,8 @@ const router = createBrowserRouter([
         ]
     },
     {
-        path: '/dashboard',
-        element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>
+        path: '/reviews',
+        element: <PrivateRoute><Reviews></Reviews></PrivateRoute>
     }
 ])
 

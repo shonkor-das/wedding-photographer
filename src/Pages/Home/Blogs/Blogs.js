@@ -4,7 +4,7 @@ const Blogs = () => {
 
     
     return (
-        <div className="card card-compact grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center ml-36">
+        <div className="card card-compact grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 justify-center mx-20 mt-3">
             <div className="card-body">
                 <h2 className="card-title">Difference between SOL and NoSQL ?</h2>
                 <h3 className='text-sm font-bold text-success'>Answer:-</h3>
