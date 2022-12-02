@@ -4,7 +4,7 @@ import img7 from '../../../assets/service-img/img7.png';
 const Package = () => {
 
     return (
-        <div className='mt-12'>
+        <div className='mt-20'>
             <div className="card card-side bg-base-100 shadow-xl">
                 <figure><img src={img7} alt="Movie" /></figure>
                 <div className="card-body">

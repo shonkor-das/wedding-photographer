@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Banner from '../Banner/Banner';
 import Chooses from '../Choose/Chooses';
 import Features from '../Feature/Features';

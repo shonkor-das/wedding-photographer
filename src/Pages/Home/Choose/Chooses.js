@@ -28,7 +28,7 @@ const Chooses = () => {
     ]
 
     return (
-        <div className='mt-16'>
+        <div className='mt-16 px-14'>
             <div className='text-center mb-5'>
                 <h2 className='text-3xl font-bold'>WHY CHOOSE FRANK AND LISA?</h2>
             </div>

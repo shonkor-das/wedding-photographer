@@ -1,44 +1,43 @@
  [
     {
-        "_id": 1,
+        "id": 1,
         "price": "$450",
-        "img": "file:///C:/Users/shonk/OneDrive/Desktop/Project/Server%20Mogodb/full-project/wedding-photographer/src/assets/service-img/img1.png",
+        "img": "https://img.freepik.com/free-photo/groom-black-tuxedo-hugs-tender-stunning-bride-while-they-stand_8353-8050.jpg?w=740&t=st=1669963999~exp=1669964599~hmac=428bf50d712e6d663eb3e9fb79ff4ee18b7b58bb929232bed3f458967a743cc1",
         "name": "Elopements",
         "description": "If you are planning to elope or have an intimate wedding then I am already your biggest fan, because smart couples know that the small wedding trend is here to stay. We are proud of you for choosing a wedding style that focuses more on celebrating your love, and less on distracting details."
     },
     {
-        "_id": 2,
-        "img": "img6",
+        "id": 2,
+        "price": "$650",
+        "img": "https://img.freepik.com/premium-photo/front-view-beautiful-newlyweds-with-friends-looking-camera-smiling-street_8353-11664.jpg?w=740",
         "name": "Simple and Sweet",
         "description": "Wedding planning and location consultation with Rachel ● Instruction on obtaining your marriage license - we will file it for you (Please provide a stamped envelope addressed to your county recorder).● All edited images are delivered by an online gallery."
     },
     {
-        "_id": 3,
-        "img": "img7",
+        "id": 3,
+        "price": "$350",
+        "img": "https://img.freepik.com/free-photo/beautiful-wedding-couple-forest-with-yellowed-trees-almost-kissing-marriage-concept-wedding-couple-autumn-forest_8353-11027.jpg?w=740&t=st=1669964111~exp=1669964711~hmac=b067ade98bd2837bb2194692909c969485ee07caa1e2526a3fc32e1622fa3e77",
         "name": "Intimate Weddings",
         "description": "Wedding planning and location consultation with Rachel ● Instruction on obtaining your marriage license - we will file it for you ● All edited images are delivered by an online gallery "
     },
     {
-        "_id": 4,
-        "img": "img8",
+        "id": 4,
+        "price": "$400",
+        "img": "https://img.freepik.com/free-photo/wedding-archway-backyard-happy-wedding-couple-outdoors-before-wedding-ceremony_8353-11057.jpg?w=740&t=st=1669964157~exp=1669964757~hmac=260c0d19edc2d88e15a94877b171c326a54c7bc15c69a6eb492303480fe48e92",
         "name": "All Inclusive - Starting",
         "description": "Wedding planning and location consultation with Rachel ● Instruction on obtaining your marriage license - we will file it for you ● All edited images are delivered by an online gallery "
     },
     {
-        "_id": 5,
-        "img": "img10",
+        "id": 5,
+       "price": "$500",
+        "img": "https://img.freepik.com/free-photo/wedding-couple-best-friends-are-drinking-champagne-celebrating-park-wedding-day_8353-11143.jpg?w=740&t=st=1669964190~exp=1669964790~hmac=a12af7798381f12e5ac31bad6818f12698b1eb7f262ba5446d206b4748d997ca",
         "name": "Boho Picnic",
         "description": "Wedding planning and location consultation with Rachel ● Instruction on obtaining your marriage license - we will file it for you ● All edited images are delivered by an online gallery "
     },
     {
-        "_id": 6,
-        "img": "img11",
-        "name": "Anything For Love",
-        "description": "Wedding planning and location consultation with Rachel ● Instruction on obtaining your marriage license - we will file it for you ● All edited images are delivered by an online gallery "
-    },
-    {
-        "_id": 7,
-        "img": "img7",
+        "id": 6,
+        "price": "$350",
+        "img": "https://img.freepik.com/premium-photo/bride-beautiful-dress-groom-gray-suit-sitting-sofa-indoors-trendy-wedding-style_153585-127.jpg?w=740",
         "name": "Anything For Love",
         "description": "Wedding planning and location consultation with Rachel ● Instruction on obtaining your marriage license - we will file it for you ● All edited images are delivered by an online gallery "
     }

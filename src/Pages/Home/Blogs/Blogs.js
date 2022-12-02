@@ -1,96 +1,41 @@
 import React from 'react';
-import img1 from '../../../assets/blog-img/img1.png';
-import img2 from '../../../assets/blog-img/img2.png';
-import img3 from '../../../assets/blog-img/img3.png';
-import img4 from '../../../assets/blog-img/img4.png';
-import img5 from '../../../assets/blog-img/img5.png';
-import img6 from '../../../assets/blog-img/img6.png';
-import img7 from '../../../assets/blog-img/img7.png';
-import img8 from '../../../assets/blog-img/img8.png';
-import img9 from '../../../assets/blog-img/img9.png';
-import img10 from '../../../assets/blog-img/img10.png';
-import img11 from '../../../assets/blog-img/img11.png';
-import img12 from '../../../assets/blog-img/img12.png';
-import Blog from './Blog';
 
 const Blogs = () => {
 
-    const blogsData = [
-        {
-            id: 1,
-            img: img1,
-            name: 'A Quirky Vintage Elopement',
-        },
-        {
-            id: 2,
-            img: img2,
-            name: '7 Reasons To LOVE Rain On Your Wedding Day!',
-        },
-        {
-            id: 3,
-            img: img3,
-            name: 'What is An SF City Hall Civil Ceremony Wedding REALLY Like?',
-        },
-        {
-            id: 4,
-            img: img4,
-            name: 'A Quirky Vintage Elopement',
-        },
-        {
-            id: 5,
-            img: img5,
-            name: 'Trendy SF Elopement Locations!',
-        },
-        {
-            id: 6,
-            img: img6,
-            name: 'Colorful Moss Beach Elopement!',
-        },
-        {
-            id: 7,
-            img: img7,
-            name: 'Muir Woods Wedding Hack!',
-        },
-        {
-            id: 8,
-            img: img8,
-            name: 'Wedding Photography Dream Team Addition',
-        },
-        {
-            id: 9,
-            img: img9,
-            name: 'The Number 1 Fairytale Elopement Venue In California!',
-        },
-        {
-            id: 10,
-            img: img10,
-            name: 'A Chinese Wedding: San Francisco Style!',
-        },
-        {
-            id: 11,
-            img: img11,
-            name: 'Romantic Lighthouse Elopement? YES!!!',
-        },
-        {
-            id: 12,
-            img: img12,
-            name: 'How To Secretly Propose To Your Girlfriend',
-        },
-    ]
     
     return (
-        <div className='mt-12'>
-            <div className='text-center mb-12'>
-                <h2 className='text-4xl font-bold p-5'>Blog</h2>
-                <p>Check out the latest posts full of resources and inspiration showcasing <br /> how other people celebrated their wedding days and get ideas for your <br /> own!</p>
+        <div className="card card-compact grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center ml-36">
+            <div className="card-body">
+                <h2 className="card-title">Difference between SOL and NoSQL ?</h2>
+                <h3 className='text-sm font-bold text-success'>Answer:-</h3>
+                <ul>
+                    <li>Difference between SOL and NoSQL</li>
+                    <li>SQL databases have relations while NoSQL databases don’t have any relations.</li>
+                    <li>SQL databases consist of tables whereas NoSQL databases have collections and documents.</li>
+                    <li>SQL databases have multiple tables while in NoSql databases, the data is shrunk into just a few collections.</li>
+                    <li>SQL databases are vertically scalable but NoSQL databases are both vertically and horizontally scalable.</li>
+                    <li>SQL databases can have limitations on no. of queries/sec whereas NoSQL databases don’t.Difference between SOL and NoSQL</li>
+                </ul>
             </div>
-            <div className='grid gap-14 grid-cols-1 md:grid-cols-1 lg:grid-cols-2'>
-                {
-                    blogsData.map(blog => <Blog
-                        key={ blog.id}
-                        blog={blog}
-                    ></Blog>)
-                }
+            <div className="card-body">
+                <h2 className="card-title">What is JWT and how does it work ?</h2>
+                <h3 className='text-sm font-bold text-success'>Answer:-</h3>
+                <p>JWT, or JSON Web Token, is an open standard used to share security information between two parties — a client and a server.<br/>
+                How JWT Works<br/>
+                    JWTs differ from other web tokens in that they contain a set of claims. Claims are used to transmit information between two parties. What these claims are depends on the use case at hand. For example, a claim may assert who issued the token, how long it is valid for, or what permissions the client has been granted.
+                </p>
+            </div>
+            <div className="card-body">
+                <h2 className="card-title">What is the difference between javascript and NodeJs ?</h2>
+                <h3 className='text-sm font-bold text-success'>Answer:-</h3>
+                <p>JavaScript is a programming language, which runs in web browsers. Whereas Node.js is an interpreter or running environment for JavaScript, which holds a lot of requiring libraries and all. JavaScript is basically one standard defining programming language; it can run any browser with a default browser running environment.</p>
+
+            </div>
+            <div className="card-body">
+                <h2 className="card-title">How does NodeJs handle multiple requests at the same timeDifference between SOL and NoSQL ?</h2>
+                <h3 className='text-sm font-bold text-success'>Answer:-</h3>
+                <p>I have a Node.js app and noticed that when I madke 2 requests to my Node Api at the same time, they appear to be queued. I.e the time for the second request is the time for the first request plus the time for the second request (if I just fired that request on its own).</p>
+
             </div>
         </div>
     );

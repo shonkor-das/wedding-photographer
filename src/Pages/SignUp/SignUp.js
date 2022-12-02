@@ -1,21 +1,39 @@
-import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { useForm } from "react-hook-form";
 import { AuthContext } from '../../Contexts/AuthProvider';
+import toast from 'react-hot-toast';
 
 const SignUp = () => {
 
     const { register, handleSubmit, formState: { errors } } = useForm();
-    const {createUser} = useContext(AuthContext);
+    const {createUser, updateUser} = useContext(AuthContext);
+    const [signUpError, setSignUpError] = useState('');
+    const navigate = useNavigate();
 
     const handleSignUp = (data) => {
-        console.log(data);
+        // console.log(data);
+        setSignUpError('');
         createUser(data.email, data.password)
         .then(result =>{
             const user = result.user;
             console.log(user);
+            
+            toast('User Created Successfully.')
+
+            const userInfo = {
+                displayName: data.name
+            }
+            updateUser(userInfo)
+            .then(() =>{
+                navigate('/');
+            })
+            .catch(err => console.log(err));
         })
-        .catch(error => console.log(error));
+        .catch(error => {
+            console.log(error)
+            setSignUpError(error.message)
+        });
     }
 
     return (
@@ -60,6 +78,7 @@ const SignUp = () => {
                         {errors.password && <p className='text-error'>{errors.password?.message}</p>}
                     </div>
                     <input className='btn btn-neutral w-full mt-3' value="Sign Up" type="submit" />
+                    {signUpError && <p className='text-red-600'>{signUpError}</p>}
                 </form>
                 <p className='text-sm text-center mt-2'>Already have an account  <Link to="/login" className='text-success'>Please Login</Link> </p>
                 <div className="divider">OR</div>

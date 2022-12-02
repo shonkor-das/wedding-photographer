@@ -3,7 +3,7 @@ import Chooses from '../../Home/Choose/Chooses';
 
 const About = () => {
     return (
-        <div>
+        <div className=''>
             <Chooses></Chooses>
         </div>
     );

@@ -27,7 +27,7 @@ const Features = () => {
     ]
 
     return (
-        <div className='mt-12'>
+        <div className='mt-12 px-14'>
             <div className='mb-5'>
                 <h2 className='text-4xl font-semibold'>Featured Work</h2>
             </div>

@@ -1,8 +1,8 @@
 import React from 'react';
 
-const ServiceOption = ({ ServiceOption }) => {
+const ServiceOption = ({ service }) => {
 
-    const { name, img, description } = ServiceOption;
+    const { name, img, description } = service;
 
     return (
         <div className = "card card-compact shadow-xl" >
