@@ -34,8 +34,9 @@ const Blogs = () => {
             <div className="card-body">
                 <h2 className="card-title">How does NodeJs handle multiple requests at the same timeDifference between SOL and NoSQL ?</h2>
                 <h3 className='text-sm font-bold text-success'>Answer:-</h3>
-                <p>I have a Node.js app and noticed that when I madke 2 requests to my Node Api at the same time, they appear to be queued. I.e the time for the second request is the time for the first request plus the time for the second request (if I just fired that request on its own).</p>
-
+                <p>
+                    I have a Node.js app and noticed that when I madke 2 requests to my Node Api at the same time, they appear to be queued. I.e the time for the second request is the time for the first request plus the time for the second request (if I just fired that request on its own).
+                </p>
             </div>
         </div>
     );
