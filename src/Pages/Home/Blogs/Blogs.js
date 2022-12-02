@@ -28,8 +28,9 @@ const Blogs = () => {
             <div className="card-body">
                 <h2 className="card-title">What is the difference between javascript and NodeJs ?</h2>
                 <h3 className='text-sm font-bold text-success'>Answer:-</h3>
-                <p>JavaScript is a programming language, which runs in web browsers. Whereas Node.js is an interpreter or running environment for JavaScript, which holds a lot of requiring libraries and all. JavaScript is basically one standard defining programming language; it can run any browser with a default browser running environment.</p>
-
+                <p>
+                    JavaScript is a programming language, which runs in web browsers. Whereas Node.js is an interpreter or running environment for JavaScript, which holds a lot of requiring libraries and all. JavaScript is basically one standard defining programming language; it can run any browser with a default browser running environment.
+                </p>
             </div>
             <div className="card-body">
                 <h2 className="card-title">How does NodeJs handle multiple requests at the same timeDifference between SOL and NoSQL ?</h2>
